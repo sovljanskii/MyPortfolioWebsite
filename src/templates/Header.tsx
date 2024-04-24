@@ -5,6 +5,7 @@ function Header() {
         <div>
         <a href="">About me</a>
         <a href="">My cv</a>
+        <img src="./headerlogo.png"></img>
         <a href="">Projects</a>
         <a href="">Contact</a>
         </div>
