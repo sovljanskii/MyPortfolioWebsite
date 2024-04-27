@@ -2,7 +2,18 @@
   margin:0;
   padding:0;
   color:white;
+  font-family: "Encode Sans";
+  font-variant: small-caps; 
+  
 }
 body{
   background-color: #252525;
 }
+
+section{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

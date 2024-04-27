@@ -10,7 +10,10 @@ export default {
 
     },
     fontSize:{
-      sm : ['20px','20px'],
+      sm : ['20px','34px'],
+      med: ['24px','44px'],
+      lg : ['44px','54px'],
+      xl: ['82px', '92px'],
     },
     extend: {},
   },
