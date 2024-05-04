@@ -1,17 +1,26 @@
 import myLogo from "../assets/headerlogo.png";
-function Header() {
+interface Props {
+  setNextPage: (page: string) => void;
+}
+
+function Header({ setNextPage }: Props) {
   return (
     <header
       id="header"
       className="w-full bg-black text-sm uppercase flex-1 flex-row"
     >
-      <div className="w-20"></div>
+      <div className="ws-20"></div>
       <div className="flex flex-row justify-center gap-12 h-14 items-center">
-        <a href="">About me</a>
-        <a href="">My cv</a>
-        <img src={myLogo} alt="Logo" className="pt-12"></img>
-        <a href="">Projects</a>
-        <a href="">Contact</a>
+        <a onClick={() => setNextPage("aboutMe")}>About me</a>
+        <a onClick={() => setNextPage("cv")}>My cv</a>
+        <img
+          onClick={() => setNextPage("main")}
+          src={myLogo}
+          alt="Logo"
+          className="headerLogo pt-12"
+        ></img>
+        <a onClick={() => setNextPage("projects")}>Projects</a>
+        <a onClick={() => setNextPage("contact")}>Contact</a>
       </div>
     </header>
   );

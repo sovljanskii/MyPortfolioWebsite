@@ -10,10 +10,14 @@ body{
   background-color: #252525;
 }
 
-section{
+main{
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow:hidden;
 }
 
+a, .headerLogo{
+  cursor: pointer;
+}

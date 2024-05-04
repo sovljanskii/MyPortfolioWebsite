@@ -7,7 +7,7 @@ function Footer() {
         className="text-sm absolute bottom-0 w-full flex justify-center"
       >
         <p className="bg-black p-2 rounded-t-lg">
-          @{currentYear} Dimitrije Šovljanski
+          &copy;{currentYear} Dimitrije Šovljanski
         </p>
       </footer>
     </>
