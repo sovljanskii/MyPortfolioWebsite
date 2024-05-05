@@ -1,25 +1,41 @@
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
 interface Props {
   heading: string;
   subheading?: string;
   text: string;
+  other?: string;
+  path?: string;
 }
 
-function LeftBlockInterface({ heading, subheading, text }: Props) {
+function LeftBlockInterface({ heading, subheading, text, other, path }: Props) {
   return (
     <div className="left-block w-1/2 flex flex-col justify-center">
-      <div className="flex flex-col gap-8 pb-12">
-        {subheading && (
+      <HelmetProvider>
+        <Helmet>
+          <link rel="canonical" href={"https://sovljanski.com" + path} />
+          <title>{heading}</title>
+        </Helmet>
+      </HelmetProvider>
+      {subheading && (
+        <p
+          className="text-lg"
+          dangerouslySetInnerHTML={{
+            __html: subheading.replace(/\n/g, "<br />"),
+          }}
+        />
+      )}
+      <h1 className="text-xl">{heading}</h1>
+      <div>
+        {text && (
           <p
-            className="text-lg"
+            className="text-med"
             dangerouslySetInnerHTML={{
-              __html: subheading.replace(/\n/g, "<br />"),
+              __html: text.replace(/\n/g, "<br />"),
             }}
           />
         )}
-        <h1 className="text-xl">{heading}</h1>
-      </div>
-      <div>
-        <p className="text-med">{text}</p>
+        {other}
       </div>
     </div>
   );

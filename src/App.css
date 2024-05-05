@@ -21,3 +21,8 @@ main{
 a, .headerLogo{
   cursor: pointer;
 }
+.icon-list{
+  background-color: black;
+  fill: white;
+  
+}

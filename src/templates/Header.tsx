@@ -1,5 +1,6 @@
 import myLogo from "../assets/headerlogo.png";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Header() {
   return (
@@ -11,7 +12,12 @@ function Header() {
         <Link to="/about-me">About me</Link>
         <Link to="/my-cv">My cv</Link>
         <Link to="">
-          <img src={myLogo} alt="Logo" className="headerLogo pt-12"></img>
+          <motion.img
+            whileHover={{ scale: 1.05 }}
+            src={myLogo}
+            alt="Logo"
+            className="headerLogo pt-12"
+          ></motion.img>
         </Link>
         <Link to="/projects">Projects</Link>
         <Link to="/contact">Contact</Link>

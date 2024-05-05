@@ -1,3 +1,5 @@
+import FooterContact from "../components/FooterContact";
+
 function Footer() {
   const currentYear = new Date().getFullYear();
   return (
@@ -9,6 +11,7 @@ function Footer() {
         <p className="bg-black p-2 rounded-t-lg">
           &copy;{currentYear} Dimitrije Šovljanski
         </p>
+        <FooterContact />
       </footer>
     </>
   );
