@@ -1,8 +1,8 @@
 import "./App.css";
 import Header from "./templates/Header";
 import Footer from "./templates/Footer";
-import LeftBlock from "./components/LeftBlock";
-import RightBlock from "./components/RightBlock";
+import LeftBlock from "./components/Main/LeftBlock";
+import RightBlock from "./components/Main/RightBlock";
 import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {

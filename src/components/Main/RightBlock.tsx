@@ -14,7 +14,7 @@ function RightBlock() {
   );
 
   useEffect(() => {
-    renderer.current.setSize(250, 250);
+    renderer.current.setSize(400, 400);
     renderer.current.setClearColor(0x000000, 0);
     if (canvasContainerRef.current && renderer.current.domElement) {
       canvasContainerRef.current.appendChild(renderer.current.domElement);
