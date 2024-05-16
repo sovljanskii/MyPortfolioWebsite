@@ -8,8 +8,8 @@ function LeftBlock() {
         path="/"
         element={
           <LeftBlockInterface
-            heading="Dimitrije Šovljanski"
-            subheading={"Welcome to my website! \nMy name is"}
+            heading="Dimitrije"
+            subheading="Hi, My name is"
             text="I'm a dedicated freelance software and web developer, continuously striving to solve any challenges I encounter."
             path="/"
           />

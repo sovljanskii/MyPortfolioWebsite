@@ -11,8 +11,8 @@ export default {
     },
     fontSize:{
       sm : ['20px','34px'],
-      med: ['24px','44px'],
-      lg : ['44px','54px'],
+      med: ['34px','50px'],
+      lg : ['44px','72px'],
       xl: ['82px', '92px'],
     },
     extend: {},

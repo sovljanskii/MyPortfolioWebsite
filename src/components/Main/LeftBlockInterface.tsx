@@ -10,7 +10,7 @@ interface Props {
 
 function LeftBlockInterface({ heading, subheading, text, other, path }: Props) {
   return (
-    <div className="left-block w-1/2 flex flex-col pt-24 gap-8">
+    <div className="left-block w-1/2 flex flex-col pt-24 gap-4">
       <HelmetProvider>
         <Helmet>
           <link rel="canonical" href={"https://sovljanski.com" + path} />
