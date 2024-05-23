@@ -10,7 +10,7 @@ function Header() {
       id="header"
       className="w-full bg-black text-sm uppercase flex-1 flex-row"
     >
-      <div className="flex flex-row justify-center gap-12 h-14 items-center">
+      <nav className="flex flex-row justify-center gap-12 h-14 items-center">
         <Link
           to="/about-me"
           onClick={() => {
@@ -74,7 +74,7 @@ function Header() {
         >
           Contact
         </Link>
-      </div>
+      </nav>
     </header>
   );
 }

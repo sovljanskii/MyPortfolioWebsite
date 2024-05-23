@@ -3,20 +3,13 @@
   padding:0;
   color:white;
   font-family: "Encode Sans";
-  font-variant: small-caps; 
   
 }
 body{
   background-color: #252525;
 }
 
-main{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow:hidden;
-}
+
 
 a, .headerLogo{
   cursor: pointer;

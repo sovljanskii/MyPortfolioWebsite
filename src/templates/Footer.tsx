@@ -6,7 +6,7 @@ function Footer() {
     <>
       <footer
         id="footer"
-        className="text-sm absolute bottom-0 w-full flex justify-center select-none"
+        className="text-sm relative bottom-0 w-full flex justify-center select-none"
       >
         <p className="bg-black p-2 rounded-t-lg">
           &copy;{currentYear} Dimitrije Šovljanski

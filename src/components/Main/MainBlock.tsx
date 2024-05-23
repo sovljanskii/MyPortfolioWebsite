@@ -1,20 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import LeftBlockInterface from "./LeftBlockInterface";
-
+import HomePage from "../../Pages/HomePage";
 function LeftBlock() {
   return (
     <Routes>
-      <Route
-        path="/"
-        element={
-          <LeftBlockInterface
-            heading="Dimitrije"
-            subheading="Hi, My name is"
-            text="I'm a dedicated freelance software and web developer, continuously striving to solve any challenges I encounter."
-            path="/"
-          />
-        }
-      />
+      <Route path="/" element={<HomePage />} />
       <Route
         path="/about-me"
         element={
@@ -22,6 +12,8 @@ function LeftBlock() {
             subheading="Here you can learn more"
             heading="About me"
             text="I started my journey from a very young age, making mini-apps and websites in middle school, and through the year improved my algorithmic thinking and problem-solving skills. Aknowledging my passion for programming, I then enrolled in a high school for IT, where I learned the basics of programming, database design and web development and gained a title of Engineer of Information Technology.
+            I'm currently a first year student of Software engineering at Računarski fakultet in Belgrade.I started my journey from a very young age, making mini-apps and websites in middle school, and through the year improved my algorithmic thinking and problem-solving skills. Aknowledging my passion for programming, I then enrolled in a high school for IT, where I learned the basics of programming, database design and web development and gained a title of Engineer of Information Technology.
+            I'm currently a first year student of Software engineering at Računarski fakultet in Belgrade.I started my journey from a very young age, making mini-apps and websites in middle school, and through the year improved my algorithmic thinking and problem-solving skills. Aknowledging my passion for programming, I then enrolled in a high school for IT, where I learned the basics of programming, database design and web development and gained a title of Engineer of Information Technology.
             I'm currently a first year student of Software engineering at Računarski fakultet in Belgrade. "
             path="/about-me"
           />

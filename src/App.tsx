@@ -1,8 +1,7 @@
 import "./App.css";
 import Header from "./templates/Header";
 import Footer from "./templates/Footer";
-import LeftBlock from "./components/Main/LeftBlock";
-import RightBlock from "./components/Main/RightBlock";
+import MainBlock from "./components/Main/MainBlock";
 import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
@@ -10,10 +9,9 @@ function App() {
     <>
       <Router>
         <Header></Header>
-        <main className="hero h-[80vh] mt-12">
-          <div className="container flex h-full">
-            <LeftBlock />
-            <RightBlock />
+        <main className=" flex direction-column justify-center min-h-[90vh]">
+          <div className="container h-full">
+            <MainBlock />
           </div>
         </main>
         <Footer></Footer>
