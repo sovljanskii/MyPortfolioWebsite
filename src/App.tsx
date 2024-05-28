@@ -1,4 +1,4 @@
-import "./App.css";
+import "./styles/vars.css";
 import Header from "./templates/Header";
 import Footer from "./templates/Footer";
 import MainBlock from "./components/Main/MainBlock";
@@ -9,7 +9,7 @@ function App() {
     <>
       <Router>
         <Header></Header>
-        <main className=" flex direction-column justify-center min-h-[90vh]">
+        <main className="flex direction-column justify-center mb-12">
           <div className="container h-full">
             <MainBlock />
           </div>

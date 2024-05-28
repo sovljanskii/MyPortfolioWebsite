@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import LeftBlockInterface from "./LeftBlockInterface";
-import HomePage from "../../Pages/HomePage";
+import HomePage from "../../views/HomePage";
 function LeftBlock() {
   return (
     <Routes>

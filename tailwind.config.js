@@ -4,6 +4,9 @@ export default {
   "./index.html",
   "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
+    screens:{
+
+    },
     colors:{
       'black' : '#0A0909',
       'gray' : '#252525',
@@ -11,9 +14,9 @@ export default {
     },
     fontSize:{
       sm : ['20px'],
-      med: ['34px'],
-      lg : ['44px'],
-      xl: ['82px'],
+      p: ['28px'],
+      h2 : ['44px'],
+      h1: ['82px'],
     },
     extend: {},
   },

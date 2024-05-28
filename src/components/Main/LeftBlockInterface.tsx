@@ -19,13 +19,13 @@ function LeftBlockInterface({ heading, subheading, text, other, path }: Props) {
       </HelmetProvider>
       {subheading && (
         <p
-          className="text-lg"
+          className="text-h2"
           dangerouslySetInnerHTML={{
             __html: subheading.replace(/\n/g, "<br />"),
           }}
         />
       )}
-      <h1 className="text-xl">{heading}</h1>
+      <h1 className="text-h1">{heading}</h1>
       <div>
         {text && (
           <p

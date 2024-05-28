@@ -46,7 +46,7 @@ function Header() {
             alt="Logo"
             className={
               "headerLogo pt-12 hover:opacity-100 transition " +
-              (pageSelected != 0 ? "opacity-70" : 0)
+              (pageSelected != 0 ? "opacity-80" : 0)
             }
           ></motion.img>
         </Link>
