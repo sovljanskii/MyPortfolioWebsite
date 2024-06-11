@@ -1,75 +1,60 @@
-import myLogo from "../assets/headerlogo.png";
+import myLogo from "../../assets/headerlogo.png";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
-function Header() {
-  const [pageSelected, setPageSelected] = useState(0);
+export default function Header() {
+  const location = useLocation().pathname;
   return (
     <header
       id="header"
-      className="w-full bg-black text-sm uppercase flex-1 flex-row"
+      className="w-full bg-black text-sm uppercase flex-1 flex-row py-1"
     >
       <nav className="flex flex-row justify-center gap-12 h-14 items-center">
         <Link
           to="/about-me"
-          onClick={() => {
-            setPageSelected(1);
-          }}
           className={
             "hover:opacity-100 transition ease " +
-            (pageSelected != 1 ? "opacity-60" : 0)
+            (location != "/about-me" ? "opacity-60" : 0)
           }
         >
           About me
         </Link>
         <Link
           to="/my-cv"
-          onClick={() => {
-            setPageSelected(2);
-          }}
           className={
             "hover:opacity-100 transition ease " +
-            (pageSelected != 2 ? "opacity-60" : 0)
+            (location != "/my-cv" ? "opacity-60" : 0)
           }
         >
           My cv
         </Link>
-        <Link to="">
+        <Link to="" className="z-10">
           <motion.img
-            onClick={() => {
-              setPageSelected(0);
-            }}
             whileHover={{ y: 5 }}
             transition={{ ease: "easeOut" }}
             src={myLogo}
             alt="Logo"
             className={
               "headerLogo pt-12 hover:opacity-100 transition " +
-              (pageSelected != 0 ? "opacity-80" : 0)
+              (location != "/" ? "opacity-70" : 0)
             }
           ></motion.img>
         </Link>
         <Link
           to="/projects"
-          onClick={() => {
-            setPageSelected(3);
-          }}
           className={
             "hover:opacity-100 transition ease " +
-            (pageSelected != 3 ? "opacity-60" : 0)
+            (location != "/projects" ? "opacity-60" : 0)
           }
         >
           Projects
         </Link>
         <Link
           to="/contact"
-          onClick={() => {
-            setPageSelected(4);
-          }}
           className={
             "hover:opacity-100 transition ease " +
-            (pageSelected != 4 ? "opacity-60" : 0)
+            (location != "/contact" ? "opacity-60" : 0)
           }
         >
           Contact
@@ -78,5 +63,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;

@@ -1,6 +1,6 @@
-import FooterContact from "../components/Footer/FooterContact";
+import FooterContact from "../../components/footer/FooterContact";
 
-function Footer() {
+export default function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <>
@@ -8,7 +8,7 @@ function Footer() {
         id="footer"
         className="text-sm fixed bottom-0 w-full flex justify-center select-none "
       >
-        <p className="bg-black p-2 rounded-t-lg">
+        <p className="bg-black py-2 px-4 rounded-t-2xl">
           &copy;{currentYear} Dimitrije Šovljanski
         </p>
         <FooterContact />
@@ -16,5 +16,3 @@ function Footer() {
     </>
   );
 }
-
-export default Footer;

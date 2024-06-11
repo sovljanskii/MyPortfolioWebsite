@@ -6,25 +6,27 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-  }
-  *{
+    background: #232526; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #252525, #313131); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #252525, #313131); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+*{
     margin:0;
     padding:0;
     color:white;
-    font-family: "Encode Sans";
-    
+    font-family: "Istok Web",sans-serif;
   }
-  body{
-    background-color: #252525;
-  }
-  
-  
-  
-  a, .headerLogo{
+
+a, .headerLogo{
     cursor: pointer;
   }
-  .icon-list{
-    background-color: black;
-    fill: white;
-  }
-  
+
+.container{
+  max-width:111rem;
+  padding-inline:clamp(1.5rem, 0.478vw + 1.347rem, 2rem);
+}
+
+section{
+  display:flex;
+  justify-content: center;
+}

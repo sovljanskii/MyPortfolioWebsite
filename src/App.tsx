@@ -1,18 +1,26 @@
-import "./styles/vars.css";
-import Header from "./templates/Header";
-import Footer from "./templates/Footer";
-import MainBlock from "./components/Main/MainBlock";
-import { BrowserRouter as Router } from "react-router-dom";
-
+import Header from "./views/templates/Header";
+import Footer from "./views/templates/Footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./views/pages/HomePage";
+import AboutMePage from "./views/pages/AboutMePage";
+import MyCVPage from "./views/pages/MyCVPage";
+import ProjectsPage from "./views/pages/ProjectsPage";
+import ContactPage from "./views/pages/ContactPage";
 function App() {
   return (
     <>
       <Router>
         <Header></Header>
-        <main className="flex direction-column justify-center mb-12">
-          <div className="container h-full">
-            <MainBlock />
-          </div>
+        <main>
+          <section className="pt-[8vh]">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about-me" element={<AboutMePage />} />
+              <Route path="/my-cv" element={<MyCVPage />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+            </Routes>
+          </section>
         </main>
         <Footer></Footer>
       </Router>
