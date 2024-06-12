@@ -12,7 +12,7 @@ function App() {
       <Router>
         <Header></Header>
         <main>
-          <section className="pt-[8vh]">
+          <section className="pt-[3vh] pb-[50px]">
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about-me" element={<AboutMePage />} />

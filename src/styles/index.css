@@ -6,9 +6,9 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #232526; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #252525, #313131); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #252525, #313131); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #252525; /* fallback for old browsers */
+    /* #background: -webkit-linear-gradient(to bottom, #313131, #252525); /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to bottom, #313131, #252525); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 *{
     margin:0;
@@ -30,3 +30,7 @@ section{
   display:flex;
   justify-content: center;
 }
+li{ 
+  list-style-type:'👉'; 
+  list-style-position: inside; 
+} 

@@ -6,7 +6,7 @@ export default function Footer() {
     <>
       <footer
         id="footer"
-        className="text-sm fixed bottom-0 w-full flex justify-center select-none "
+        className="text-sm fixed bottom-0 w-full flex justify-center select-none z-50 "
       >
         <p className="bg-black py-2 px-4 rounded-t-2xl">
           &copy;{currentYear} Dimitrije Šovljanski

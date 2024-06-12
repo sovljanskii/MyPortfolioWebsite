@@ -1,5 +1,7 @@
-import React from "react";
-
 export default function ProjectsPage() {
-  return <div>ProjectsPage</div>;
+  return (
+    <div className="h-full flex flex-column ">
+      <h1>Projects</h1>
+    </div>
+  );
 }
