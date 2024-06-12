@@ -15,12 +15,12 @@ const cursorVariants = {
 
 export default function Cursor() {
   return (
-    <motion.div
+    <motion.span
       variants={cursorVariants}
       animate="blinking"
       className="inline-block h-5"
     >
       |
-    </motion.div>
+    </motion.span>
   );
 }

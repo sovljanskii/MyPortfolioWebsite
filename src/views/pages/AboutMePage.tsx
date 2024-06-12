@@ -1,7 +1,7 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import image from "../../assets/headerlogo.png";
+import image from "../../assets/threed.webp";
 export default function AboutMePage() {
   const navigate = useNavigate();
   return (
