@@ -6,12 +6,12 @@ export default function Footer() {
     <>
       <footer
         id="footer"
-        className="text-sm fixed bottom-0 w-full flex justify-center select-none z-50 "
+        className="text-sm flex flex-col tablet:flex-row tablet:fixed bottom-0 w-full justify-center select-none z-50 "
       >
-        <p className="bg-black py-2 px-4 rounded-t-2xl">
+        <FooterContact />
+        <p className="bg-black py-2 px-4 rounded-t-2xl text-center">
           &copy;{currentYear} Dimitrije Šovljanski
         </p>
-        <FooterContact />
       </footer>
     </>
   );

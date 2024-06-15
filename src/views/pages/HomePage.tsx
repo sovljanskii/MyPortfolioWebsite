@@ -22,7 +22,7 @@ export default function HomePage() {
       </HelmetProvider>
       <motion.div
         animate={{ x: [-100, 0] }}
-        className="w-1/2 gap-8 flex flex-col py-20 "
+        className="w-full tablet:w-6/12 gap-8 flex flex-col py-20 z-10 "
       >
         <div>
           <p className="text-p2">Hi, my name is</p>
@@ -52,7 +52,7 @@ export default function HomePage() {
         </div>
       </motion.div>
 
-      <motion.div className="w-1/2 overflow-hidden max-h-[80vh]">
+      <motion.div className="absolute tablet:static w-full tablet:w-6/12 overflow-hidden max-h-[80vh] z-0">
         <motion.svg
           height="100%"
           viewBox="0 0 1077 1023"
@@ -72,7 +72,7 @@ export default function HomePage() {
             repeatType: "mirror",
             ease: "easeInOut",
           }}
-          className={"relative overflow-hidden " + cursorStyle.cursor}
+          className={"relative overflow-hidden right-0 " + cursorStyle.cursor}
           pointerEvents="visibleFill"
         >
           <motion.path
@@ -88,9 +88,6 @@ export default function HomePage() {
             fill="#0A0909"
             whileHover={{
               filter: ["drop-shadow(1px 3px 6px rgba(100,100,100,0.5))"],
-            }}
-            whileDrag={{
-              filter: ["drop-shadow(1px 3px 6px rgba(100,100,100,0.7))"],
             }}
             initial={{ filter: "drop-shadow(0 0 0 transparent)" }}
           />

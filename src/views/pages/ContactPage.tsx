@@ -1,17 +1,64 @@
-import ContactForm from "../../components/main/contactPage/ContactForm";
+import { motion } from "framer-motion";
 
 export default function ContactPage() {
   return (
-    <div className="container h-full flex flex-row gap-4">
-      <div>
-        <div>
-          <p className="text-p2">Feel free to</p>
-          <h1 className="text-h1">Contact me</h1>
+    <div className="container h-full flex justify-center gap-4 space-around">
+      <motion.form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        onSubmit={() => alert("Thank you for your message!")}
+        className="flex bg-black bg-opacity-10 flex-col gap-8 h-full w-[50%] grid place-self-center p-8 rounded-xl shadow-lg text-center"
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
+      >
+        <div className="text-center">
+          <h1 className="text-h1">Contact Me</h1>
+          <p className="text-p2">Get in touch with me!</p>
         </div>
-      </div>
-      <div>
-        <ContactForm />
-      </div>
+
+        <label className="gap-4 w-full flex justify-center">
+          <input
+            type="text"
+            name="firstname"
+            placeholder="First name"
+            className="text-white w-1/2 rounded-lg p-2 bg-gray shadow-xl"
+          />
+          <input
+            type="text"
+            name="lastname"
+            placeholder="Last name"
+            className="text-white w-1/2 rounded-lg p-2 bg-gray shadow-xl"
+          />
+        </label>
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Email address*"
+          className="text-white rounded-lg p-2 bg-gray shadow-xl"
+          required
+        />
+        <input
+          type="tel"
+          name="phonenumber"
+          placeholder="Phone Number"
+          className="text-white rounded-lg p-2 bg-gray shadow-xl"
+        />
+
+        <textarea
+          name="message"
+          placeholder="Message*"
+          className="text-white rounded-lg p-2 bg-gray shadow-xl h-32 "
+          required
+        ></textarea>
+        <div>
+          <button type="submit" className="shadow-xl w-1/2 bg-red center">
+            Send ≫
+          </button>
+        </div>
+      </motion.form>
     </div>
   );
 }

@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 
 interface Props {
-  href?: string;
+  href: string;
   children?: React.ReactNode;
   target?: string;
+  label: string;
 }
 
-function ContactIcon({ href, children, target }: Props) {
+function ContactIcon({ href, children, target, label }: Props) {
   return (
-    <a href={href} target={target} className="rounded ">
+    <a href={href} target={target} aria-label={label} className="rounded ">
       <motion.svg
         whileHover={{ scale: 1.2, y: -10 }}
         whileTap={{ scale: 0.95 }}

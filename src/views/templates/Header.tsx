@@ -10,7 +10,8 @@ export default function Header() {
       id="header"
       className="w-full bg-black text-sm uppercase flex-1 flex-row py-1"
     >
-      <nav className="flex flex-row justify-center gap-12 h-14 items-center">
+      {/* PC */}
+      <nav className="hidden tablet:flex flex-row justify-center gap-12 h-14 items-center">
         <Link
           to="/about-me"
           className={
@@ -60,6 +61,8 @@ export default function Header() {
           Contact
         </Link>
       </nav>
+      {/* Mobile */}
+      <button className="tablet:hidden"> </button>
     </header>
   );
 }
