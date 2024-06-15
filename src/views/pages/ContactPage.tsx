@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 export default function ContactPage() {
   return (
     <div className="container h-full flex justify-center gap-4 space-around">
