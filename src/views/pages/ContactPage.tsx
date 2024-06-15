@@ -1,16 +1,21 @@
+import { motion } from "framer-motion";
+
 export default function ContactPage() {
   return (
     <div className="container h-full flex justify-center gap-4 space-around">
-      <form
+      <motion.form
         name="contact"
         method="POST"
         data-netlify="true"
         className="flex bg-black bg-opacity-10 flex-col gap-8 h-full w-[50%] grid place-self-center p-8 rounded-xl shadow-lg text-center"
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: "easeInOut" }}
       >
         <input type="hidden" name="form-name" value="contact" />
         <div className="text-center">
-          <h1 className="text-h1">Contact Me</h1>
-          <p className="text-p2">Get in touch with me!</p>
+          <h1 className="text-h1s tablet:text-h1">Contact Me</h1>
+          <p className="text-p2s tablet:text-p2">Get in touch with me!</p>
         </div>
         <label className="gap-4 w-full flex justify-center">
           <input
@@ -52,7 +57,7 @@ export default function ContactPage() {
             Send ≫
           </button>
         </div>
-      </form>
+      </motion.form>
     </div>
   );
 }
