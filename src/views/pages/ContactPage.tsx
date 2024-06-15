@@ -7,8 +7,6 @@ export default function ContactPage() {
         name="contact"
         method="POST"
         data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        onSubmit={() => alert("Thank you for your message!")}
         className="flex bg-black bg-opacity-10 flex-col gap-8 h-full w-[50%] grid place-self-center p-8 rounded-xl shadow-lg text-center"
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
