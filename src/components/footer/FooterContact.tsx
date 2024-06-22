@@ -1,6 +1,6 @@
 import ContactIcon from "./ContactIcon";
 
-function FooterContact() {
+export default function FooterContact() {
   return (
     <div
       id="footerContact"
@@ -31,4 +31,3 @@ function FooterContact() {
     </div>
   );
 }
-export default FooterContact;

@@ -1,13 +1,20 @@
 import { motion } from "framer-motion";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 export default function ContactPage() {
   return (
     <div className="container h-full flex justify-center gap-4 space-around">
+      <HelmetProvider>
+        <Helmet>
+          <link rel="canonical" href={"https://sovljanski.com"} />
+          <title>Contact me | Dimitrije Šovljanski</title>
+        </Helmet>
+      </HelmetProvider>
       <motion.form
         name="contact"
         method="POST"
         data-netlify="true"
-        className="flex bg-black bg-opacity-10 flex-col gap-8 h-full w-[50%] grid place-self-center p-8 rounded-xl shadow-lg text-center"
+        className="flex bg-black bg-opacity-10 flex-col gap-8 h-full w-full laptop:w-1/2 grid place-self-center p-8 rounded-xl shadow-lg text-center"
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
@@ -53,7 +60,11 @@ export default function ContactPage() {
           required
         ></textarea>
         <div>
-          <button type="submit" className="shadow-xl w-1/2 bg-red center">
+          <input name="file" type="file" multiple />
+          <button
+            type="submit"
+            className="shadow-xl p-2 rounded-xl bg-black w-1/2 center"
+          >
             Send ≫
           </button>
         </div>

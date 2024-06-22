@@ -7,7 +7,7 @@ interface Props {
   label: string;
 }
 
-function ContactIcon({ href, children, target, label }: Props) {
+export default function ContactIcon({ href, children, target, label }: Props) {
   return (
     <a href={href} target={target} aria-label={label} className="rounded ">
       <motion.svg
@@ -22,5 +22,3 @@ function ContactIcon({ href, children, target, label }: Props) {
     </a>
   );
 }
-
-export default ContactIcon;

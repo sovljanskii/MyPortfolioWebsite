@@ -23,10 +23,10 @@ export default {
     fontSize:{
       sm : ['20px'],
       p: ['28px'],
-      p2 : ['44px','64px'],
-      p2s : ['34px','52px'],
+      p2 : ['38px','44px'],
+      p2s : ['28px','52px'],
       h1: ['82px','120px'],
-      h1s: ['64px','84px'],
+      h1s: ['48px','84px'],
     },
     extend: {},
   },

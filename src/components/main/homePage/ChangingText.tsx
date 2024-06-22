@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 
-function ChangingText() {
+export default function ChangingText() {
   const textIndex = useMotionValue(0);
   const texts = [
     "Software engineer",
@@ -50,5 +50,3 @@ function ChangingText() {
     </motion.span>
   );
 }
-
-export default ChangingText;
