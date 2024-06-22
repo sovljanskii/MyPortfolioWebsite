@@ -22,7 +22,7 @@ export default function Hamburger({ children }: HamburgerProps) {
   }, [location]);
 
   return (
-    <div className="p-4">
+    <>
       <div
         className="hamburger-icon flex flex-row justify-between"
         onClick={toggleHamburger}
@@ -43,6 +43,6 @@ export default function Hamburger({ children }: HamburgerProps) {
           {children}
         </div>
       )}
-    </div>
+    </>
   );
 }

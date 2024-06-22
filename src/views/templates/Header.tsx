@@ -63,53 +63,55 @@ export default function Header() {
         </Link>
       </nav>
       {/* Mobile */}
-      <Hamburger>
-        <Link
-          to="/"
-          className={
-            "hover:opacity-100 transition ease " +
-            (location != "/" ? "opacity-60" : 0)
-          }
-        >
-          Home
-        </Link>
-        <Link
-          to="/about-me"
-          className={
-            "hover:opacity-100 transition ease " +
-            (location != "/about-me" ? "opacity-60" : 0)
-          }
-        >
-          About me
-        </Link>
-        <Link
-          to="/my-cv"
-          className={
-            "hover:opacity-100 transition ease " +
-            (location != "/my-cv" ? "opacity-60" : 0)
-          }
-        >
-          My cv
-        </Link>
-        <Link
-          to="/projects"
-          className={
-            "hover:opacity-100 transition ease " +
-            (location != "/projects" ? "opacity-60" : 0)
-          }
-        >
-          Projects
-        </Link>
-        <Link
-          to="/contact"
-          className={
-            "hover:opacity-100 transition ease " +
-            (location != "/contact" ? "opacity-60" : 0)
-          }
-        >
-          Contact
-        </Link>
-      </Hamburger>
+      <nav className="tablet:hidden p-2">
+        <Hamburger>
+          <Link
+            to="/"
+            className={
+              "hover:opacity-100 transition ease " +
+              (location != "/" ? "opacity-60" : 0)
+            }
+          >
+            Home
+          </Link>
+          <Link
+            to="/about-me"
+            className={
+              "hover:opacity-100 transition ease " +
+              (location != "/about-me" ? "opacity-60" : 0)
+            }
+          >
+            About me
+          </Link>
+          <Link
+            to="/my-cv"
+            className={
+              "hover:opacity-100 transition ease " +
+              (location != "/my-cv" ? "opacity-60" : 0)
+            }
+          >
+            My cv
+          </Link>
+          <Link
+            to="/projects"
+            className={
+              "hover:opacity-100 transition ease " +
+              (location != "/projects" ? "opacity-60" : 0)
+            }
+          >
+            Projects
+          </Link>
+          <Link
+            to="/contact"
+            className={
+              "hover:opacity-100 transition ease " +
+              (location != "/contact" ? "opacity-60" : 0)
+            }
+          >
+            Contact
+          </Link>
+        </Hamburger>
+      </nav>
     </header>
   );
 }

@@ -76,7 +76,7 @@ export default function AboutMePage() {
       <motion.img
         src={image}
         alt="3d model"
-        className="hidden tablet:block absolute right-0 bottom-0 h-full  overflow-hidden select-none "
+        className="hidden tablet:block absolute right-0 bottom-0 h-full overflow-hidden select-none "
         initial={{ filter: "drop-shadow(0 0 0 transparent)" }}
         whileHover={{
           filter: ["drop-shadow(1px 3px 6px rgba(100,100,100,0.5))"],

@@ -52,7 +52,7 @@ export default function HomePage() {
         </div>
       </motion.div>
 
-      <motion.div className="absolute tablet:relative w-full tablet:w-6/12 overflow-hidden max-h-[80vh] z-0">
+      <motion.div className="absolute tablet:relative left-0 w-full tablet:w-6/12 overflow-hidden max-h-[80vh] z-0">
         <motion.svg
           height="100%"
           viewBox="0 0 1077 1023"
