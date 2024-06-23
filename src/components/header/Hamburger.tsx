@@ -1,6 +1,6 @@
 import { useState, ReactNode, useEffect } from "react";
 import { useLocation } from "react-router-dom"; // Import useLocation
-
+import image from "../../assets/headerlogo.png";
 interface HamburgerProps {
   children: ReactNode;
 }
@@ -23,25 +23,23 @@ export default function Hamburger({ children }: HamburgerProps) {
 
   return (
     <>
-      <div
-        className="hamburger-icon flex flex-row justify-between"
-        onClick={toggleHamburger}
-      >
+      <div className="h-12 flex flex-row justify-between items-center">
         {/* Hamburger Icon */}
-        <div>
+        <div onClick={toggleHamburger} className="hamburger-icon">
           <div className={isOpen ? "bar1 open" : "bar1"}></div>
           <div className={isOpen ? "bar2 open" : "bar2"}></div>
           <div className={isOpen ? "bar3 open" : "bar3"}></div>
         </div>
-        <div>{h1Text}</div>
+        <p>{h1Text} </p>
+        <img className="h-[150%]" src={image} alt="Logo picture" />
       </div>
       {isOpen && (
-        <div
+        <nav
           className="hamburger-content flex flex-col"
           onClick={toggleHamburger}
         >
           {children}
-        </div>
+        </nav>
       )}
     </>
   );

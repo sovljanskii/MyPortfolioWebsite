@@ -63,7 +63,7 @@ export default function Header() {
         </Link>
       </nav>
       {/* Mobile */}
-      <nav className="tablet:hidden p-2">
+      <div className="tablet:hidden p-2">
         <Hamburger>
           <Link
             to="/"
@@ -111,7 +111,7 @@ export default function Header() {
             Contact
           </Link>
         </Hamburger>
-      </nav>
+      </div>
     </header>
   );
 }
