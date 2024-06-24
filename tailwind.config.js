@@ -5,15 +5,13 @@ export default {
   "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     screens:{
-      'tablet': '640px',
-      // => @media (min-width: 640px) { ... }
+      'tablet': '750px',
 
       'laptop': '1024px',
-      // => @media (min-width: 1024px) { ... }
 
       'desktop': '1280px',
-      // => @media (min-width: 1280px) { ... }
-    },
+    },      // => @media (min-width: 1280px) { ... }
+
     colors:{
       'black' : '#0A0909',
       'gray' : '#252525',
@@ -22,11 +20,11 @@ export default {
     },
     fontSize:{
       sm : ['20px'],
-      p: ['28px'],
+      p: ['28px','36px'],
       p2 : ['38px','44px'],
       p2s : ['28px','52px'],
       h1: ['82px','120px'],
-      h1s: ['48px','84px'],
+      h1s: ['68px','82px'],
     },
     extend: {},
   },

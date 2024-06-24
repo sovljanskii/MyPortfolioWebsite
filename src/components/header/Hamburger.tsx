@@ -1,5 +1,5 @@
 import { useState, ReactNode, useEffect } from "react";
-import { useLocation } from "react-router-dom"; // Import useLocation
+import { Link, useLocation } from "react-router-dom"; // Import useLocation
 import image from "../../assets/headerlogo.png";
 interface HamburgerProps {
   children: ReactNode;
@@ -31,7 +31,9 @@ export default function Hamburger({ children }: HamburgerProps) {
           <div className={isOpen ? "bar3 open" : "bar3"}></div>
         </div>
         <p>{h1Text} </p>
-        <img className="h-[150%]" src={image} alt="Logo picture" />
+        <Link to="/">
+          <img className="h-[150%]" src={image} alt="Logo picture" />
+        </Link>
       </div>
       {isOpen && (
         <nav

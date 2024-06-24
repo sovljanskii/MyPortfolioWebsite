@@ -22,18 +22,18 @@ export default function HomePage() {
       </HelmetProvider>
       <motion.div
         animate={{ x: [-100, 0] }}
-        className="w-full tablet:w-6/12 gap-8 flex flex-col py-20 z-10 "
+        className="w-full laptop:w-6/12  flex flex-col py-20 z-10 "
       >
-        <div>
+        <div className="pb-4">
           <p className="text-p2">Hi, my name is</p>
-          <h1 className="text-h1">Dimitrije Šovljanski</h1>
+          <h1 className="text-h1s tablet:text-h1">Dimitrije Šovljanski</h1>
 
           <p className="text-p">
             I'm a <ChangingText />
             <Cursor />
           </p>
         </div>
-        <div className="inline-block">
+        <div>
           <p className="text-p inline">See some cool facts about me! </p>
           <motion.button
             initial={{ x: 0 }}
@@ -50,9 +50,26 @@ export default function HomePage() {
             About me
           </motion.button>
         </div>
+        <div>
+          <p className="text-p inline">Contact me! </p>
+          <motion.button
+            initial={{ x: 0 }}
+            animate={{ x: [0, -10, 10, -10, 10, 0] }}
+            transition={{
+              duration: 1,
+              repeat: Infinity,
+              repeatType: "reverse",
+              repeatDelay: 2,
+            }}
+            className="button bg-black py-2 px-4 rounded-full text-p inline  hover:bg-white hover:text-black transition ease-in-out"
+            onClick={() => navigate("/contact")}
+          >
+            Contact
+          </motion.button>
+        </div>
       </motion.div>
 
-      <motion.div className="absolute tablet:relative left-0 w-full tablet:w-6/12 overflow-hidden max-h-[80vh] z-0">
+      <motion.div className="absolute laptop:relative left-0 w-full laptop:w-6/12 overflow-hidden max-h-[80vh] z-0">
         <motion.svg
           height="100%"
           viewBox="0 0 1077 1023"

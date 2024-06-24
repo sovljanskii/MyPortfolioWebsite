@@ -36,14 +36,14 @@ export default function AboutMePage() {
               Belgrade, Serbia.
             </li>
             <li className="text-p">
+              I started with programming very early; in middle school, making
+              mini-applications and websites.
+            </li>
+            <li className="text-p">
               I attended the Electroengineering high school, where I acquired
               the basics of programming, database design, and web development
               and graduated with the title of Engineer of Information
               Technology.
-            </li>
-            <li className="text-p">
-              I started with programming very early; in middle school, making
-              mini-applications and websites.
             </li>
             <li className="text-p">
               I am a creative individual who enjoys solving problems and
@@ -56,20 +56,29 @@ export default function AboutMePage() {
           <motion.button
             className="button bg-black py-4 px-8 rounded-full text-p inline  hover:bg-white hover:text-black"
             onClick={() => navigate("/my-cv")}
-            initial={{ opacity: 0, x: -150 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ ease: "easeInOut" }}
+            animate={{ opacity: 1, x: 0, y: [0, -15, 0] }}
+            transition={{
+              ease: "backInOut",
+              repeat: Infinity,
+              duration: 1,
+              repeatDelay: 3,
+            }}
           >
-            Check my CV
+            My CV
           </motion.button>
           <motion.button
             className="button bg-black py-4 px-8 rounded-full text-p inline  hover:bg-white hover:text-black"
-            onClick={() => navigate("/contact")}
-            initial={{ opacity: 0, x: -150 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ ease: "easeInOut" }}
+            onClick={() => navigate("/projects")}
+            animate={{ opacity: 1, x: 0, y: [0, -15, 0] }}
+            transition={{
+              ease: "backInOut",
+              repeat: Infinity,
+              duration: 1,
+              delay: 1,
+              repeatDelay: 3,
+            }}
           >
-            Contact me!
+            Projects
           </motion.button>
         </div>
       </div>
