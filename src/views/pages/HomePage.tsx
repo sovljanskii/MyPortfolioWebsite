@@ -3,7 +3,6 @@ import ChangingText from "../../components/main/homePage/ChangingText";
 import Cursor from "../../components/main/homePage/Cursor";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import ButtonArrow from "../../components/main/LinkedButton";
 import LinkedButton from "../../components/main/LinkedButton";
 import HomePageLogo from "../../components/main/homePage/HomePageLogo";
 
