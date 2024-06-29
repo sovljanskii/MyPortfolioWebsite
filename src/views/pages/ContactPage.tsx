@@ -6,7 +6,7 @@ export default function ContactPage() {
     <div className="container relative h-full flex flex-col justify-center gap-4 space-around">
       <HelmetProvider>
         <Helmet>
-          <link rel="canonical" href={"https://sovljanski.com"} />
+          <link rel="canonical" href={"https://sovljanski.com/contact"} />
           <title>Contact me | Dimitrije Šovljanski</title>
         </Helmet>
       </HelmetProvider>
@@ -71,7 +71,7 @@ export default function ContactPage() {
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
-        className="laptop:absolute laptop:right-0 top-0 text-center laptop:text-right"
+        className="laptop:absolute laptop:right-5 top-0 text-center laptop:text-right"
       >
         <p className="text-p2 pb-6 underline underline-offset-4	">
           Contact details

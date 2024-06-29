@@ -5,12 +5,12 @@ export default function MyCVPage() {
     <div className="container h-full flex flex-col gap-8">
       <HelmetProvider>
         <Helmet>
-          <link rel="canonical" href={"https://sovljanski.com"} />
-          <title>My CV | Dimitrije Šovljanski</title>
+          <link rel="canonical" href={"https://sovljanski.com/skills"} />
+          <title>Skills | Dimitrije Šovljanski</title>
         </Helmet>
       </HelmetProvider>
       <div>
-        <h1 className="text-h1 text-center">My CV</h1>
+        <h1 className="text-h1 text-center">Skills</h1>
       </div>
     </div>
   );

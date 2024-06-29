@@ -3,7 +3,7 @@ import Footer from "./views/templates/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./views/pages/HomePage";
 import AboutMePage from "./views/pages/AboutMePage";
-import MyCVPage from "./views/pages/MyCVPage";
+import SkillsPage from "./views/pages/SkillsPage";
 import ProjectsPage from "./views/pages/ProjectsPage";
 import ContactPage from "./views/pages/ContactPage";
 export default function App() {
@@ -16,7 +16,7 @@ export default function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about-me" element={<AboutMePage />} />
-              <Route path="/my-cv" element={<MyCVPage />} />
+              <Route path="/skills" element={<SkillsPage />} />
               <Route path="/projects" element={<ProjectsPage />} />
               <Route path="/contact" element={<ContactPage />} />
             </Routes>

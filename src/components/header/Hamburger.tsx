@@ -32,7 +32,7 @@ export default function Hamburger({ children }: HamburgerProps) {
         </div>
         <p>{h1Text} </p>
         <Link to="/">
-          <img className="h-[150%]" src={image} alt="Logo picture" />
+          <img className="h-[150%] pt-8" src={image} alt="Logo picture" />
         </Link>
       </div>
       {isOpen && (

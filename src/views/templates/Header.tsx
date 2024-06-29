@@ -23,13 +23,13 @@ export default function Header() {
           About me
         </Link>
         <Link
-          to="/my-cv"
+          to="/skills"
           className={
             "hover:opacity-100 transition ease " +
-            (location != "/my-cv" ? "opacity-60" : 0)
+            (location != "/skills" ? "opacity-60" : 0)
           }
         >
-          My cv
+          Skills
         </Link>
         <Link to="" className="z-10">
           <motion.img
@@ -84,13 +84,13 @@ export default function Header() {
             About me
           </Link>
           <Link
-            to="/my-cv"
+            to="/skills"
             className={
               "hover:opacity-100 transition ease " +
-              (location != "/my-cv" ? "opacity-60" : 0)
+              (location != "/skills" ? "opacity-60" : 0)
             }
           >
-            My cv
+            Skills
           </Link>
           <Link
             to="/projects"

@@ -44,7 +44,7 @@ export default function HomePage() {
               repeatType: "reverse",
               repeatDelay: 2,
             }}
-            className="button bg-black py-2 px-4 rounded-full text-p inline  hover:bg-white hover:text-black transition ease-in-out"
+            className="button bg-black py-2 px-4 rounded-full text-p inline border border-whiteopacity hover:bg-white hover:text-black transition ease-in-out"
             onClick={() => navigate("/about-me")}
           >
             About me
@@ -61,7 +61,7 @@ export default function HomePage() {
               repeatType: "reverse",
               repeatDelay: 2,
             }}
-            className="button bg-black py-2 px-4 rounded-full text-p inline  hover:bg-white hover:text-black transition ease-in-out"
+            className="button bg-black py-2 px-4 rounded-full text-p inline border border-whiteopacity hover:bg-white hover:text-black transition ease-in-out"
             onClick={() => navigate("/contact")}
           >
             Contact

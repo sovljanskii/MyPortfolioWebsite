@@ -11,6 +11,7 @@ export default function AboutMePage() {
           <Helmet>
             <link rel="canonical" href={"https://sovljanski.com/about-me"} />
             <title>About Me | Dimitrije Šovljanski</title>
+            <link rel="preload" href={image} as="image" />
           </Helmet>
         </HelmetProvider>
 
@@ -29,7 +30,7 @@ export default function AboutMePage() {
           <h2 className="text-p2s tablet:text-p2">
             These are some interesting facts about me!
           </h2>
-          <ul className="list-[square] gap-4 flex flex-col">
+          <ul className="gap-4 flex flex-col">
             <li className="text-p">
               I am currently pursuing a Bachelor's degree in Software
               Engineering at the Faculty of Computing (Računarski fakultet) in
@@ -54,8 +55,8 @@ export default function AboutMePage() {
         </motion.div>
         <div className="float-center flex gap-4 z-10">
           <motion.button
-            className="button bg-black py-4 px-8 rounded-full text-p inline  hover:bg-white hover:text-black"
-            onClick={() => navigate("/my-cv")}
+            className="button bg-black py-4 px-8 rounded-full border border-whiteopacity text-p inline  hover:bg-white hover:text-black"
+            onClick={() => navigate("/skills")}
             animate={{ opacity: 1, x: 0, y: [0, -15, 0] }}
             transition={{
               ease: "backInOut",
@@ -64,10 +65,10 @@ export default function AboutMePage() {
               repeatDelay: 3,
             }}
           >
-            My CV
+            Skills
           </motion.button>
           <motion.button
-            className="button bg-black py-4 px-8 rounded-full text-p inline  hover:bg-white hover:text-black"
+            className="button bg-black py-4 px-8 rounded-full border border-whiteopacity text-p inline  hover:bg-white hover:text-black"
             onClick={() => navigate("/projects")}
             animate={{ opacity: 1, x: 0, y: [0, -15, 0] }}
             transition={{
