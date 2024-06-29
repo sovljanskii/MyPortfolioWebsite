@@ -2,6 +2,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import image from "../../assets/threed.webp";
+import LinkedButton from "../../components/main/LinkedButton";
 export default function AboutMePage() {
   const navigate = useNavigate();
   return (
@@ -25,7 +26,7 @@ export default function AboutMePage() {
         <motion.div
           initial={{ opacity: 0, y: -150, x: -150 }}
           animate={{ opacity: 1, y: 0, x: 0 }}
-          className="flex flex-col gap-5 z-10 tablet:w-[80%]"
+          className="flex flex-col gap-5 z-10 laptop:w-[70%]"
         >
           <h2 className="text-p2s tablet:text-p2">
             These are some interesting facts about me!
@@ -54,8 +55,7 @@ export default function AboutMePage() {
           </ul>
         </motion.div>
         <div className="float-center flex gap-4 z-10">
-          <motion.button
-            className="button bg-black py-4 px-8 rounded-full border border-whiteopacity text-p inline  hover:bg-white hover:text-black"
+          <LinkedButton
             onClick={() => navigate("/skills")}
             animate={{ opacity: 1, x: 0, y: [0, -15, 0] }}
             transition={{
@@ -66,9 +66,8 @@ export default function AboutMePage() {
             }}
           >
             Skills
-          </motion.button>
-          <motion.button
-            className="button bg-black py-4 px-8 rounded-full border border-whiteopacity text-p inline  hover:bg-white hover:text-black"
+          </LinkedButton>
+          <LinkedButton
             onClick={() => navigate("/projects")}
             animate={{ opacity: 1, x: 0, y: [0, -15, 0] }}
             transition={{
@@ -80,7 +79,7 @@ export default function AboutMePage() {
             }}
           >
             Projects
-          </motion.button>
+          </LinkedButton>
         </div>
       </div>
       <motion.img

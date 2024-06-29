@@ -11,8 +11,8 @@ export default function App() {
     <>
       <Router>
         <Header></Header>
-        <main className="h-full w-full">
-          <section className="pt-[3rem] min-h-[90vh] tablet:pb-[150px] tablet:pb-[50px]">
+        <main className="h-full min-h-[calc(100vh-105px)] w-full">
+          <section className="pt-[3rem] tablet:pb-[150px] tablet:pb-[50px]">
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about-me" element={<AboutMePage />} />

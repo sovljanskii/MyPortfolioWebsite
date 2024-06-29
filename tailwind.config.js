@@ -16,7 +16,9 @@ export default {
       'black' : '#0A0909',
       'gray' : '#252525',
       'white' : '#FFFFFF',
+      'buttoncol' :'#644cad',
       'whiteopacity' : 'rgba(200,200,200,0.2)',
+      'blackopacity' : 'rgba(0,0,0,0.5)',
       'transparent' : 'transparent',
     },
     fontSize:{
