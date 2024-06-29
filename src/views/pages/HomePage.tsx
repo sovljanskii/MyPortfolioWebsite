@@ -19,7 +19,7 @@ export default function HomePage() {
       </HelmetProvider>
       <motion.div
         animate={{ x: [-100, 0] }}
-        className="w-full laptop:w-6/12  flex flex-col py-20 z-10 "
+        className="w-full laptop:w-6/12 flex flex-col py-12 z-10 "
       >
         <div className="pb-4">
           <p className="text-p2">Hi, my name is</p>
@@ -30,7 +30,7 @@ export default function HomePage() {
             <Cursor />
           </p>
         </div>
-        <div>
+        <div className="pb-2">
           <p className="text-p inline">See some cool facts about me! </p>
           <LinkedButton
             initial={{ x: 0 }}
@@ -40,7 +40,7 @@ export default function HomePage() {
             About me
           </LinkedButton>
         </div>
-        <div>
+        <div className="pb-2">
           <p className="text-p inline">Contact me!</p>
           <LinkedButton
             initial={{ x: 0 }}
