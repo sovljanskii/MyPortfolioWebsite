@@ -2,7 +2,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import image from "../../assets/threed.webp";
-import LinkedButton from "../../components/main/LinkedButton";
+import LinkedButton from "../../components/general/LinkedButton";
 export default function AboutMePage() {
   const navigate = useNavigate();
   return (
@@ -85,7 +85,7 @@ export default function AboutMePage() {
       <motion.img
         src={image}
         alt="3d model"
-        className="hidden tablet:block absolute right-0 bottom-0 h-full overflow-hidden select-none "
+        className="hidden pointer-events-none tablet:block absolute right-0 bottom-0 h-full overflow-hidden select-none "
         initial={{ filter: "drop-shadow(0 0 0 transparent)" }}
         whileHover={{
           filter: ["drop-shadow(1px 3px 6px rgba(100,100,100,0.5))"],

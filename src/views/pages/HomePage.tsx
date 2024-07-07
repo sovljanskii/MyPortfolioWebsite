@@ -3,8 +3,9 @@ import ChangingText from "../../components/main/homePage/ChangingText";
 import Cursor from "../../components/main/homePage/Cursor";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import LinkedButton from "../../components/main/LinkedButton";
+import LinkedButton from "../../components/general/LinkedButton";
 import HomePageLogo from "../../components/main/homePage/HomePageLogo";
+import H1 from "../../components/general/H1";
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ export default function HomePage() {
       >
         <div className="pb-4">
           <p className="text-p2">Hi, my name is</p>
-          <h1 className="text-h1s tablet:text-h1">Dimitrije Šovljanski</h1>
+          <H1>Dimitrije Šovljanski</H1>
 
           <p className="text-p">
             I'm a <ChangingText />
@@ -30,7 +31,7 @@ export default function HomePage() {
           </p>
         </div>
         <div className="pb-2">
-          <p className="text-p inline">See some cool facts about me! </p>
+          <p className="text-p pr-2 inline">See some cool facts about me! </p>
           <LinkedButton
             initial={{ x: 0 }}
             animate={{ x: [0, -10, 10, -10, 10, 0] }}
@@ -40,7 +41,7 @@ export default function HomePage() {
           </LinkedButton>
         </div>
         <div className="pb-2">
-          <p className="text-p inline">Contact me!</p>
+          <p className="text-p pr-2 inline">Contact me!</p>
           <LinkedButton
             initial={{ x: 0 }}
             animate={{ x: [0, -10, 10, -10, 10, 0] }}
