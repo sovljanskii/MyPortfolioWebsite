@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import image from "../../assets/threed.webp";
 import LinkedButton from "../../components/general/LinkedButton";
+import H2 from "../../components/general/H2";
+import H1 from "../../components/general/H1";
 export default function AboutMePage() {
   const navigate = useNavigate();
   return (
@@ -21,16 +23,16 @@ export default function AboutMePage() {
           animate={{ opacity: 1, y: 0 }}
           className="z-10"
         >
-          <h1 className="text-h1s tablet:text-h1 text-center">About me</h1>
+          <H1>About me</H1>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: -150, x: -150 }}
           animate={{ opacity: 1, y: 0, x: 0 }}
           className="flex flex-col gap-5 z-10 laptop:w-[70%]"
         >
-          <h2 className="text-p2s tablet:text-p2">
+          <H2>
             These are some interesting facts about me!
-          </h2>
+          </H2>
           <ul className="gap-4 flex flex-col">
             <li className="text-p">
               I am currently pursuing a Bachelor's degree in Software
@@ -85,7 +87,7 @@ export default function AboutMePage() {
       <motion.img
         src={image}
         alt="3d model"
-        className="hidden pointer-events-none tablet:block absolute right-0 bottom-0 h-full overflow-hidden select-none "
+        className="hidden tablet:block absolute right-0 bottom-0 h-full overflow-hidden select-none "
         initial={{ filter: "drop-shadow(0 0 0 transparent)" }}
         whileHover={{
           filter: ["drop-shadow(1px 3px 6px rgba(100,100,100,0.5))"],

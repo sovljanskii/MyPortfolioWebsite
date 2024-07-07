@@ -39,7 +39,7 @@ export default function Header() {
             alt="Logo"
             className={
               "headerLogo pt-12 hover:opacity-100 transition " +
-              (location != "/" ? "opacity-70" : 0)
+              (location != "/" ? "opacity-85" : 0)
             }
           ></motion.img>
         </Link>

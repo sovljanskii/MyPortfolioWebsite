@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import H1 from "../../components/general/H1";
+import H2 from "../../components/general/H2";
 
 export default function ContactPage() {
   return (
@@ -21,7 +23,7 @@ export default function ContactPage() {
       >
         <input type="hidden" name="form-name" value="contact" />
         <div className="text-center">
-          <h1 className="text-h1s tablet:text-h1">Contact Me</h1>
+          <H1>Contact Me</H1>
           <p className="text-p2s tablet:text-p2">Get in touch with me!</p>
         </div>
         <label className="gap-4 w-full flex justify-center">
@@ -68,14 +70,12 @@ export default function ContactPage() {
         </div>
       </motion.form>
       <motion.div
-        initial={{ opacity: 0, x: 30 }}
+        initial={{ opacity: 0, x: 15 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
         className="laptop:absolute laptop:right-5 top-0 text-center laptop:text-right"
       >
-        <p className="text-p2 pb-6 underline underline-offset-4	">
-          Contact details
-        </p>
+        <H2 className="pb-6 underline underline-offset-4">Contact details</H2>
         <div className="pb-4">
           <p className="text-p font-bold">Email</p>
           <a className="text-p" href="mailto:sovljanski04@gmail.com">

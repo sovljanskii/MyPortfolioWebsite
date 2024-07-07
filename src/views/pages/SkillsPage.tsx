@@ -1,4 +1,8 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import H1 from "../../components/general/H1";
+import H2 from "../../components/general/H2";
+import Skill from "../../components/main/skillsPage/Skill";
+import { motion } from "framer-motion";
 
 export default function MyCVPage() {
   return (
@@ -9,8 +13,32 @@ export default function MyCVPage() {
           <title>Skills | Dimitrije Šovljanski</title>
         </Helmet>
       </HelmetProvider>
-      <div>
-        <h1 className="text-h1 text-center">Skills</h1>
+      <motion.div
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: "easeInOut" }}
+      >
+        <H1 className="text-center">Skills</H1>
+      </motion.div>
+      <div className="grid grid-cols-1 tablet:grid-cols-3 gap-4 justify-between p-4">
+        <div className="skills-software bg-black bg-opacity-10 p-8">
+          <H2 className="text-center pb-8 underline">Software</H2>
+          <Skill name="C" percentage="70" color="red" />
+          <Skill name="C#" percentage="90" color="red" />
+          <Skill name="Java" percentage="80" color="red" />
+        </div>
+        <div className="skills-web bg-black bg-opacity-10 p-8">
+          <H2 className="text-center pb-8 underline">Web</H2>
+          <Skill name="React" percentage="60" color="blue" />
+          <Skill name="Javascript" percentage="70" color="blue" />
+          <Skill name="HTML & CSS" percentage="90" color="blue" />
+        </div>
+        <div className="skills-other bg-black bg-opacity-10 p-8">
+          <H2 className="text-center pb-8 underline">Other</H2>
+          <Skill name="Linux" percentage="60" color="green" />
+          <Skill name="Microsoft Office" percentage="80" color="green" />
+          <Skill name="English" percentage="95" color="green" />
+        </div>
       </div>
     </div>
   );
