@@ -1,7 +1,7 @@
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import image from "../../assets/threed.webp";
+import image from "../../assets/3d_model.webp";
 import LinkedButton from "../../components/general/LinkedButton";
 import H2 from "../../components/general/H2";
 import H1 from "../../components/general/H1";
@@ -30,9 +30,7 @@ export default function AboutMePage() {
           animate={{ opacity: 1, y: 0, x: 0 }}
           className="flex flex-col gap-5 z-10 laptop:w-[70%]"
         >
-          <H2>
-            These are some interesting facts about me!
-          </H2>
+          <H2>These are some interesting facts about me!</H2>
           <ul className="gap-4 flex flex-col">
             <li className="text-p">
               I am currently pursuing a Bachelor's degree in Software
