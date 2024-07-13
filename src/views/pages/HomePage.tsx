@@ -55,7 +55,7 @@ export default function HomePage() {
           </LinkedButton>
         </div>
       </motion.div>
-      <div className="absolute laptop:relative left-0 w-full laptop:w-6/12 overflow-hidden max-h-[80vh] z-0">
+      <div className="absolute tablet:relative left-0 w-full laptop:w-6/12 overflow-hidden max-h-[80vh] z-0">
         <HomePageLogo />
       </div>
     </div>
