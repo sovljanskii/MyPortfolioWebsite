@@ -16,7 +16,7 @@ export default function ContactPage() {
         name="contact"
         method="POST"
         data-netlify="true"
-        className="flex bg-black bg-opacity-10 shadow-2xl mb-4 flex-col gap-8 h-full w-full laptop:w-1/2 grid place-self-center p-8 rounded-xl shadow-lg text-center"
+        className="flex bg-black bg-opacity-10 shadow-2xl mb-4 flex-col gap-8 h-full w-full laptop:w-1/2 grid place-self-center p-4 tablet:p-8 rounded-xl shadow-lg text-center"
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, ease: "easeInOut" }}

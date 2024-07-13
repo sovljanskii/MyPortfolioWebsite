@@ -23,21 +23,24 @@ export default function MyCVPage() {
       <div className="grid grid-cols-1 tablet:grid-cols-3 gap-4 justify-between p-4">
         <div className="skills-software bg-black bg-opacity-10 p-8">
           <H2 className="text-center pb-8 underline">Software</H2>
-          <Skill name="C" percentage="70" color="red" />
+          <Skill name="C" percentage="60" color="red" />
           <Skill name="C#" percentage="90" color="red" />
           <Skill name="Java" percentage="80" color="red" />
+          <Skill name="ASM" percentage="30" color="red" />
         </div>
         <div className="skills-web bg-black bg-opacity-10 p-8">
           <H2 className="text-center pb-8 underline">Web</H2>
+          <Skill name="Wordpress" percentage="90" color="blue" />
           <Skill name="React" percentage="60" color="blue" />
           <Skill name="Javascript" percentage="70" color="blue" />
           <Skill name="HTML & CSS" percentage="90" color="blue" />
         </div>
         <div className="skills-other bg-black bg-opacity-10 p-8">
           <H2 className="text-center pb-8 underline">Other</H2>
-          <Skill name="Linux" percentage="60" color="green" />
-          <Skill name="Microsoft Office" percentage="80" color="green" />
-          <Skill name="English" percentage="95" color="green" />
+          <Skill name="English" percentage="90" color="lime" />
+          <Skill name="Serbian" percentage="100" color="lime" />
+          <Skill name="Linux" percentage="60" color="lime" />
+          <Skill name="Microsoft Office" percentage="80" color="lime" />
         </div>
       </div>
     </div>

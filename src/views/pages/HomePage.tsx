@@ -15,6 +15,10 @@ export default function HomePage() {
         <Helmet>
           <link rel="canonical" href={"https://sovljanski.com"} />
           <title>Dimitrije Šovljanski</title>
+          <meta
+            name="description"
+            content="Skilled and creative software engineering student with a passion for programming and problem-solving."
+          ></meta>
         </Helmet>
       </HelmetProvider>
       <motion.div

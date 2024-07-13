@@ -1,5 +1,5 @@
-import { useState, ReactNode, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom"; // Import useLocation
+import { useState, ReactNode } from "react";
+import { Link } from "react-router-dom"; // Import useLocation
 import image from "../../assets/headerlogo.png";
 interface HamburgerProps {
   children: ReactNode;
@@ -7,19 +7,9 @@ interface HamburgerProps {
 
 export default function Hamburger({ children }: HamburgerProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const [h1Text, setH1Text] = useState("Home");
-  const location = useLocation(); // Use the useLocation hook
-
   const toggleHamburger = () => {
     setIsOpen(!isOpen);
   };
-
-  useEffect(() => {
-    const h1 = document.querySelector("h1");
-    if (h1) {
-      setH1Text(h1.textContent || "");
-    }
-  }, [location]);
 
   return (
     <>
@@ -30,14 +20,13 @@ export default function Hamburger({ children }: HamburgerProps) {
           <div className={isOpen ? "bar2 open" : "bar2"}></div>
           <div className={isOpen ? "bar3 open" : "bar3"}></div>
         </div>
-        <p>{h1Text} </p>
         <Link to="/">
-          <img className="h-[150%] pt-8" src={image} alt="Logo picture" />
+          <img className="pt-2 h-[80px]" src={image} alt="Logo picture" />
         </Link>
       </div>
       {isOpen && (
         <nav
-          className="hamburger-content flex flex-col"
+          className="hamburger-content bg-black flex flex-col"
           onClick={toggleHamburger}
         >
           {children}
